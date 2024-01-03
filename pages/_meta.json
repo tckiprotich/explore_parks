@@ -1,15 +1,17 @@
 {
   "index": "Introduction",
-  "another": "Another Page",
-  "advanced": "Advanced (A Folder)",
+  "GetStarted": "Getting Started",
+  "endpoints": "EndPoints",
   "about": {
-    "title": "About",
-    "type": "page"
+    "title": "About ↗",
+    "type": "page",
+    "href": "https://twitter.com/tckiprotich",
+    "newWindow": true
   },
   "contact": {
     "title": "Contact ↗",
     "type": "page",
-    "href": "https://twitter.com/shuding_",
+    "href": "https://twitter.com/tckiprotich",
     "newWindow": true
   }
 }

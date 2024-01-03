@@ -1,0 +1,122 @@
+# Endpoints
+
+### GET /api/getAllParks
+Description: Retrieves all parks asynchronously.
+
+##### Example Request:
+
+```http
+GET /api/getAllParks
+```
+
+##### Example Response:
+
+```json
+{
+  "success": true,
+  "message": "Parks retrieved successfully",
+  "data": [ /* Array of ParkModel objects */ ]
+}
+```
+
+### GET /api/getParkById/id
+Description: Retrieves a park by its ID.
+
+Example Request:
+
+```http
+GET /api/getParkById/123
+```
+
+##### Example Response:
+
+```json
+{
+  "success": true,
+  "message": "Park retrieved successfully",
+  "data": [ /* ParkModel object */ ]
+}
+```
+
+### GET /api/getParkByName/Name
+Description: Retrieves a park by its Name
+
+Example Request:
+
+```http
+GET /api/getParkByName/Amboseli National Park
+```
+
+##### Example Response:
+
+```json
+{
+  "success": true,
+  "message": "Park retrieved successfully",
+  "data": [ /* ParkModel object */ ]
+}
+```
+
+### GET /api/getParkByCountry/Country
+Description: Retrieves a park by its ID.
+
+Example Request:
+
+```http
+GET /api/getParkByCountry/Kenya
+```
+
+##### Example Response:
+
+```json
+{
+  "success": true,
+  "message": "Park in Kenya retrieved successfully",
+  "data": [ /* ParkModel object */ ]
+}
+```
+
+### POST /api/Users
+Description: Create a new user
+
+Example Request:
+
+```http
+GET /api/Users
+```
+
+##### Parameter
+```json
+{
+  "userName": "string",
+  "password": "string",
+  "email": "string"
+}
+```
+
+##### Example Response:
+
+```json
+{
+  "userName": "string",
+  "email": "string"
+}
+```
+
+### Get /api/Users/\{username\}
+Description: Querry  user
+
+Example Request:
+
+```http
+GET /api/Users/testuser
+```
+
+##### Example Response:
+
+```json
+{
+  "userName": "string",
+  "email": "string"
+}
+```

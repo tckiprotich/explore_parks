@@ -1,0 +1,47 @@
+# Getting Started
+### Base Url
+
+Base URL: The base URL for all API endpoints is https://exploreparks.fly.dev
+
+### Authentication Setup
+#### API Keys
+To authenticate using API keys, include the x-api-key header in your requests with your unique API key.
+
+#### Bearer Tokens
+Bearer tokens can be obtained through the POST **/api/Users/BearerToken** endpoint. Include the obtained bearer_token in the Authorization header as 'Bearer token'.
+ ### Error Handling
+#### HTTP Status Codes
+The API utilizes standard HTTP status codes to indicate the success or failure of a request.
+
+#### Error Response Format
+Error responses adhere to the following format:
+
+```json
+{
+  "error": {
+    "code": "ErrorCode",
+    "message": "Error message"
+  }
+}
+```
+
+###  Endpoints
+##### GET /api/getAllParks
+Description: Retrieves all parks asynchronously.
+
+##### Example Request:
+
+http
+GET /api/getAllParks
+Example Response:
+
+```json
+Copy code
+{
+  "success": true,
+  "message": "Parks retrieved successfully",
+  "data": [ /* Array of ParkModel objects */ ]
+}
+````
+
+
